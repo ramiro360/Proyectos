@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Licoreria Patos's</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 100%;
+        }
+        .auto-style2
+        {
+            height: 23px;
+        }
+        .auto-style3
+        {
+            height: 23px;
+            width: 250px;
+        }
+        .nuevoEstilo1
+        {
+            vertical-align: top;
+            background-color: #3399FF;
+            width: 200px;
+            height: 300px;
+        }
+        .auto-style4
+        {
+            height: 91px;
+        }
+        .nuevoEstilo2
+        {
+            background-color: #FF5050;
+            height: 45px;
+            border-style: dotted outset solid outset;
+            text-align: center;
+            border-bottom-color: #3399FF;
+            border-width: thick;
+        }
+        .auto-style5
+        {
+            border-bottom: thick solid #3399FF;
+            background-color: #FF5050;
+            height: 45px;
+            text-align: center;
+            font-size: xx-large;
+            border-left-style: outset;
+            border-left-width: thick;
+            border-right-style: outset;
+            border-right-width: thick;
+            border-top-style: dotted;
+            border-top-width: thick;
+        }
+        .auto-style6
+        {
+            width: 281px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4">
+                    <img alt="" class="auto-style6" src="Images/tragos.png" /></td>
+                <td class="auto-style5">LICORERIA PATO&#39;S</td>
+            </tr>
+            <tr>
+                <td class="nuevoEstilo1">
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="auto-style2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3"></td>
+                <td class="auto-style2"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
